@@ -12,8 +12,8 @@ export default function App(){
     return (
         <div className='container'>
             <header>
-                <Link to="/">Pic Some</Link>
-                <Link to="/cart">
+                <Link to="/Picsome">Pic Some</Link>
+                <Link to="Picsome/cart">
                     <div className='shopping-cart'>
                         <img src={Img} />
                         {nrItems>0 ? <p>{nrItems}</p> : <></>}
@@ -21,8 +21,8 @@ export default function App(){
                 </Link>
             </header>
             <Routes>
-                <Route exact path="/" element={<Home/>}/>
-                <Route path="/cart" element={<Cart/>}/>
+                <Route exact path="/Picsome" element={<Home/>}/>
+                <Route path="Picsome/cart" element={<Cart/>}/>
             </Routes>
         </div>
     )
