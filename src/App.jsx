@@ -3,6 +3,7 @@ import {Link, Routes, Route} from "react-router-dom"
 import Home from "./Home"
 import Cart from "./Cart"
 import { Context } from './Context'
+import Img from "../public/cart.png"
 
 export default function App(){
 
@@ -14,7 +15,7 @@ export default function App(){
                 <Link to="/">Pic Some</Link>
                 <Link to="/cart">
                     <div className='shopping-cart'>
-                        <img src="../public/cart.png" />
+                        <img src={Img} />
                         {nrItems>0 ? <p>{nrItems}</p> : <></>}
                     </div>
                 </Link>
