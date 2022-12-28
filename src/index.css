@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 3vh;
+}
+
+header{
+    background-color:bisque;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5em;
+    justify-content: center;
+}
+
+.shopping-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-cart img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.shopping-cart p{
+    background-color: brown;
+    border-radius: 20px;
+    padding: 0.15em 0.5em;
+    font-size: 0.65em;
+    color: white;
+    margin: 1.75em 0 0 -0.75em
+}
+
+.image-box{
+    margin: 0 0.5em 0.5em 0;
+    border: 1px solid black;
+    padding: 0.25em;
+}
+
+.image-box .icon{
+    position: absolute;
+    cursor: pointer;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0.5em;
+}
+
+.image-box .cart{
+    margin-left: 12.5em;
+}
+
+.image-box img:last-child{
+    width: 15em;
+    height: 10em;
+    font-size: 3vh;
+    z-index: -1;
+}
+
+.cart{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.cart h2{
+    align-self: flex-end;
+    font-size: 1em;
+    margin-right: 1em;
+}
+
+.cart p{
+    align-self: center;
+    font-weight: bold;
+}
+
+.cart button{
+    align-self: center;
+    width: 8em;
+    height: 3em;
+    font-size: 0.5em;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cart-el{
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-el div{
+    display: flex;
+    align-items: center;
+}
+
+.cart-el .trash{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 1em;
+    margin-left: -0.5em;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.cart-el .trash:hover{
+    content: url("../public/trash-hover.png");
+}
+
+.cart-el img{
+    width: 10em;
+    height: 7em;
+    border: 1px solid black;
+    padding: 0.25em;
+}
+
+.cart-el h3{
+    font-size: 0.75em;
+}
